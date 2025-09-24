@@ -5,6 +5,6 @@ Console.WriteLine (name);
 /*vic riadkovy 
 dement */
 
-int age = 14;
-Console.WriteLine(age);
+int age = 66;
+Console.WriteLine(age); 
 
