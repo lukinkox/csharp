@@ -111,4 +111,4 @@ else
     return;
 }
 
-Console.WriteLine($"Sucet: {sucet}");
+Console.WriteLine($"Vysledok: {sucet}");
