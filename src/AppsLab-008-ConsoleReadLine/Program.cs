@@ -76,39 +76,162 @@
 
 
 
-Console.WriteLine("Zadaj čislo");
-string? prveCislo = Console.ReadLine();
-Console.WriteLine("Zadaj Operator (+, -, *, /, %)");
-string oper = Console.ReadLine();
-Console.WriteLine("Zadaj čislo");
-string? druheCislo = Console.ReadLine();
-double n1 = double.Parse(prveCislo);
-double n2 = double.Parse(druheCislo);
-double sucet = 0;
-if (oper == "+")
+//Console.WriteLine("Zadaj čislo");
+//string? prveCislo = Console.ReadLine();
+//Console.WriteLine("Zadaj Operator (+, -, *, /, %)");
+//string oper = Console.ReadLine();
+//Console.WriteLine("Zadaj čislo");
+//string? druheCislo = Console.ReadLine();
+//double n1 = double.Parse(prveCislo);
+//double n2 = double.Parse(druheCislo);
+//double sucet = 0;
+//switch (oper)
+//{
+//    case "+":
+//        sucet = n1 + n2;
+//        break;
+//}
+//switch (oper)
+//{
+//    case "-":
+//        sucet = n1 - n2;
+//        break;
+//}
+//switch (oper)
+//{
+//    case "*":
+//        sucet = n1 * n2;
+//        break;
+//}
+//switch (oper)
+//{
+//    case "/":
+//        sucet = n1 / n2;
+//        break;
+//}
+//switch (oper)
+//{
+//    case "%":
+//        sucet = n1 % n2;
+//        break;
+//}
+//if (sucet == 0)
+//{
+//    Console.WriteLine("Neplatna operacia!");
+//    return;
+//}
+
+//Console.WriteLine($"Vysledok: {sucet}");
+
+
+
+
+
+
+//string text = "qwerty";
+//text = "iny text";
+//text += " pridany text";
+
+//int vek = 10;
+//int vek1 = 20;
+//vek = 30;
+//vek += 5;
+
+//if (vek > 18)
+//{
+//    Console.WriteLine
+
+
+
+//int number = 3;
+
+//string numberDescription = number switch
+//{
+//    1 => "jeden",
+//    2 => "dva",
+//    3 => "tri",
+//    _ => "nezname cislo"
+//};
+
+//Console.WriteLine(numberDescription);
+
+
+//int i = 1;
+//while (i < 1001)
+//{
+//    Console.WriteLine(i);
+//    i++;
+
+//}
+
+
+//for (int i = 1; i <= 1000; i++)
+//{
+//    int modulo = i % 2;
+//    if (modulo == 0)
+//    { 
+//    Console.WriteLine(i);
+//    }
+//}
+
+
+
+
+
+
+
+//int[] numbers = new int[5];
+//numbers[0] = 20;
+//numbers[1] = 400;
+//numbers[2] = 30;
+//numbers[3] = 45;
+//numbers[4] = 60;
+//Console.WriteLine(numbers[0]);
+//    Console.WriteLine(numbers[1]);
+//    Console.WriteLine(numbers[2]);
+//    Console.WriteLine(numbers[3]); 
+//    Console.WriteLine(numbers[4]);
+//int index = 0;
+//while (index < 5)
+//{
+//    Console.WriteLine(numbers[index]);
+//    index++;
+//}
+//for (int i = 0; i < 5; i++)
+//{
+//    Console.WriteLine(numbers[i]);
+//}
+//foreach (int number in numbers)
+//{
+//    Console.WriteLine(number);
+//}
+
+
+
+
+
+
+
+int[] numbers = new int[] { 10, 300, 20, 40, 50 };
+
+int sum = 0;
+for (int i = 0; i < numbers.Length; i++)
 {
-    sucet = n1 + n2;
-}
-else if (oper == "-")
-{
-    sucet = n1 - n2;
-}
-else if (oper == "*")
-{
-    sucet = n1 * n2;
-}
-else if (oper == "/")
-{
-    sucet = n1 / n2;
-}
-else if (oper == "%")
-{
-    sucet = n1 % n2;
-}
-else
-{
-    Console.WriteLine("Neplatna operacia!");
-    return;
+    sum = sum + numbers[i];
 }
 
-Console.WriteLine($"Vysledok: {sucet}");
+Console.WriteLine()
+
+string[,] matrix = new string[30, 5];
+matrix[0, 2] = "Janko";
+matrix[1, 2] = "Fero";
+matrix[25, 4] = "Miro";
+
+for (int i = 0; i < 30; i++)
+{
+    for (int j = 0; j < 5; j++)
+{
+        Console.WriteLine(matrix[i, j] + ",");
+}
+    Console.WriteLine();
+}
