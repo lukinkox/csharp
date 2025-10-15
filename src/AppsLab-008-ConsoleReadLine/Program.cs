@@ -212,26 +212,83 @@
 
 
 
-int[] numbers = new int[] { 10, 300, 20, 40, 50 };
+//int[] numbers = new int[] { 10, 300, 20, 40, 50 };
 
-int sum = 0;
-for (int i = 0; i < numbers.Length; i++)
+//int sum = 0;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    sum = sum + numbers[i];
+//}
+
+//Console.WriteLine();
+
+//string[,] matrix = new string[30, 5];
+//matrix[0, 2] = "Janko";
+//matrix[1, 2] = "Fero";
+//matrix[25, 4] = "Miro";
+
+//for (int i = 0; i < 30; i++)
+//{
+//    for (int j = 0; j < 5; j++)
+//{
+//        Console.WriteLine(matrix[i, j] + ",");
+//}
+//    Console.WriteLine();
+//}
+
+
+
+
+//int i = 0;
+//while (i < 5) ;
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+
+
+//int i = 0;
+//while (i < 5);
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+
+
+
+
+
+
+
+//string i = ("*");
+//while (i.Length < 5) ;
+//{
+//    Console.WriteLine(i);
+//    i = i + "*";
+//}
+
+//int[] numbers = new int[10] { 10, 50, 70, 90, 60, 30, 20, 15, 45, 12 };
+//int sucet = 0;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    sucet += numbers[i];
+//}
+//Console.WriteLine(sucet);
+
+
+
+
+//string[] names = { "John", "Jane", "Alex" };
+
+//foreach (string name in names)
+//{
+//    Console.WriteLine("Ahoj " + name);
+//}
+
+
+string[] names = { "Dnes", "je", "na", "obed", "gulas" };
+
+foreach (string name in names)
 {
-    sum = sum + numbers[i];
-}
-
-Console.WriteLine()
-
-string[,] matrix = new string[30, 5];
-matrix[0, 2] = "Janko";
-matrix[1, 2] = "Fero";
-matrix[25, 4] = "Miro";
-
-for (int i = 0; i < 30; i++)
-{
-    for (int j = 0; j < 5; j++)
-{
-        Console.WriteLine(matrix[i, j] + ",");
-}
-    Console.WriteLine();
+    Console.WriteLine("Dobry obed" + name);
 }
