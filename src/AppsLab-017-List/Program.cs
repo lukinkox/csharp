@@ -64,3 +64,4 @@ void VypisUdaje(string meno, string vek)
 {
     Console.WriteLine($"Ahoj {meno}.Tvoj vek je {vek} rokov");
 }
+ 
