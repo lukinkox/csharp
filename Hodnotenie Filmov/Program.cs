@@ -176,7 +176,6 @@ class Program
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Vytvoril: Lukáš Maceašik");
             Console.WriteLine("Trieda: 1.AI");
-            Console.WriteLine("Pomocne zdroje: Google,ChatGPT,Text to ASCII Art Generator");
             Console.ResetColor();
         }
     
