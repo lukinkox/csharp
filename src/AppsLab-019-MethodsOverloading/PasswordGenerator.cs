@@ -18,7 +18,14 @@ namespace AppsLab_019_MethodsOverloading
         /// <returns>A randomly generated password.</returns>
         public string GeneratePassword()
         {
-            throw new NotImplementedException();
+            string password = "";
+            for (int i = 0; i < DefaultLength; i++)
+            {
+                int randomNumber = _random.Next(27);
+                password = password + Alphabet[randomNumber].ToString();
+            }
+
+            return password;
         }
 
         /// <summary>
@@ -28,7 +35,14 @@ namespace AppsLab_019_MethodsOverloading
         /// <returns>A randomly generated password.</returns>
         public string GeneratePassword(int length)
         {
-            throw new NotImplementedException();
+            string password = "";
+            for (int i = 0; i < length; i++)
+            {
+                int randomNumber = _random.Next(27);
+                password = password + Alphabet[randomNumber].ToString();
+            }
+
+            return password;
         }
 
         /// <summary>
@@ -40,7 +54,38 @@ namespace AppsLab_019_MethodsOverloading
         /// <returns>A randomly generated password.</returns>
         public string GeneratePassword(int length, bool includeSpecialChars, bool includeNumbers)
         {
-            throw new NotImplementedException();
+            string characters = Alphabet;
+            {
+                characters = characters + Numbers;
+            }
+            if (includeSpecialChars)
+            {
+                characters = characters + SpecialChars;
+            }
+
+            string password = ""; 
+
+            for (int i = 0; i < length; i++)
+            {
+                int randomNumber = _random.Next(characters.Length);
+                password = password + characters[randomNumber].ToString();
+            }
+
+
+            int pocetPismen = 0;
+                int pocetCisel = 0;
+                int pocetSpecZnakov = 0;
+
+            foreach (char c in password)
+            {
+                if (Alphabet.Contains(c))
+                    pocetPismen++;
+                else if (Numbers.Contains(c))
+                    pocetCisel++;
+                else if (SpecialChars.Contains(c))
+                    pocetSpecZnakov++;
+            }
+                    return password;
         }
     }
 }
